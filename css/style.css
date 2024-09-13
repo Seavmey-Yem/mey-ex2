@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #f3eded;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    'head head head head'
+    'nav mid mid side'
+    'foot foot foot foot'
+    ;
+    height: 100vh;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.head{
+    grid-area: head;
+    background: #2f2e2e;
+    color: white;
+    padding: 15px;
+}
+.nav{
+    grid-area: nav;
+    background: #9a9999;
+    color: white;
+    padding: 15px;
+}
+.mid{
+    grid-area: mid;
+    display: grid;
+    grid-template-rows: 2.5fr 1.5fr;
+    
+}
+.mid .add{
+    padding: 15px;
+}
+.mid .main{
+    background: #eae7e7;
+    padding: 15px;
+}
+.side{
+    grid-area: side;
+    padding: 15px;
+}
+.foot{
+    grid-area: foot;
+    background: #2f2e2e;
+    color: white;
+    text-align: center;
+}
